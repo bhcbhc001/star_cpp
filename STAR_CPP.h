@@ -69,7 +69,7 @@ namespace STAR_CPP {
 		std::string get_output_filename() const { return output_filename; }
 		
 		// 运行标程生成输出文件
-		void run(const std::string& executable_path) {
+		void createof(const std::string& executable_path) {
 			if (input_filename.empty() || output_filename.empty()) {
 				throw std::runtime_error("Input or output filename not set");
 			}
