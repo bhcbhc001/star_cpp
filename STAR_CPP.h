@@ -1,5 +1,5 @@
-#ifndef STAR_H
-#define STAR_H
+#ifndef STAR_CPP_H
+#define STAR_CPP_H
 
 #include <iostream>
 #include <fstream>
@@ -15,7 +15,7 @@
 #include <stdexcept>
 #include <filesystem>
 
-namespace STAR {
+namespace STAR_CPP {
 	class IO {
 	private:
 		std::string input_filename;
@@ -207,4 +207,4 @@ namespace STAR {
 	}
 }
 
-#endif // STAR_H
+#endif // STAR_CPP_H
