@@ -79,7 +79,7 @@ namespace STAR_CPP {
 			if (output_file.is_open()) output_file.close();
 			
 			// 构造命令行
-			std::string command = "powershell" + executable_path + " < " + input_filename + " > " + output_filename;
+			std::string command = "powershell " + executable_path + " < " + input_filename + " > " + output_filename;
 			
 			// 执行命令
 			int result = std::system(command.c_str());
