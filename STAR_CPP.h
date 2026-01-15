@@ -147,7 +147,7 @@ namespace STAR_CPP {
 	};
 	
 	// 图论相关
-	namespace graph {
+	class Graph {
 		// 生成随机树
 		std::vector<std::pair<int, int>> random_tree(int n, int seed = 0) {
 			Random rng(seed ? seed : static_cast<unsigned>(std::chrono::steady_clock::now().time_since_epoch().count()));
@@ -177,10 +177,10 @@ namespace STAR_CPP {
 			}
 			return edges;
 		}
-	}
+	};
 	
 	// 序列生成相关
-	namespace sequence {
+	class Sequence {
 		// 生成随机数组
 		std::vector<int> random_array(int n, int min_val, int max_val, int seed = 0) {
 			Random rng(seed ? seed : static_cast<unsigned>(std::chrono::steady_clock::now().time_since_epoch().count()));
@@ -204,7 +204,7 @@ namespace STAR_CPP {
 			std::sort(result.begin(), result.end(), std::greater<int>());
 			return result;
 		}
-	}
+	};
 }
 
 #endif // STAR_CPP_H
